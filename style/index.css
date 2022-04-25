@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header nav {
+  background: linear-gradient(#84b9c4, #8cc4e9);
+  width: 100%;
+  height: 100px;
+  position: relative;
+  max-width: 1600px;
+  margin: auto;
+}
+@media screen and (min-width: 1600px) {
+  header nav {
+    border-radius: 10px;
+  }
+}
+header nav #logo {
+  width: 80px;
+  height: 80px;
+  margin-left: 2%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+header nav #logo img {
+  width: 80px;
+  height: 80px;
+}
+header nav ul {
+  margin-left: 160px;
+  display: flex;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+}
+header nav ul span {
+  border-left: 2px solid #000;
+  display: inline-block;
+  height: 50px;
+  margin: 50px 0;
+  transform: translateY(-50%);
+}
+header nav ul li {
+  list-style-type: none;
+  margin: auto 25px;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #292929;
+}
+header nav #basket {
+  display: flex;
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+header nav #basket #basket-logo {
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+}
+header nav #basket #basket-logo img {
+  object-fit: contain;
+}
+
+/*# sourceMappingURL=index.css.map */
