@@ -1,22 +1,10 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-header nav {
-  background: linear-gradient(#84b9c4, #8cc4e9);
-  width: 100%;
-  height: 100px;
-  position: relative;
-  max-width: 1600px;
-  margin: auto;
-}
-@media screen and (min-width: 1600px) {
-  header nav {
-    border-radius: 10px;
-  }
-}
-header nav #logo {
+header #logo {
   width: 80px;
   height: 80px;
   margin-left: 2%;
@@ -24,46 +12,126 @@ header nav #logo {
   top: 50%;
   transform: translateY(-50%);
 }
-header nav #logo img {
+header #logo img {
   width: 80px;
   height: 80px;
 }
-header nav ul {
+header #mobile-nav {
+  background: #84b9c4;
+  height: 100px;
+  width: 100%;
+  position: relative;
+}
+header #mobile-nav .icon-container {
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+header #mobile-nav .icon-container img {
+  object-fit: cover;
+  width: 50px;
+  height: 50px;
+}
+@media screen and (min-width: 1025px) {
+  header #mobile-nav {
+    display: none;
+  }
+}
+header #mobile-ul.display {
+  display: block;
+  text-align: center;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2% 0;
+  border-top: solid #292929 3px;
+}
+header #mobile-ul.display span {
+  width: 50px;
+  border-top: solid 3px #292929;
+  margin: auto;
+}
+@media screen and (min-width: 1025px) {
+  header #mobile-ul.display {
+    display: none;
+  }
+}
+header #mobile-ul {
+  background: linear-gradient(#84b9c4, #8cc4e9);
+  display: none;
+}
+header #mobile-ul li a {
+  text-decoration: none;
+  color: #292929;
+}
+@media screen and (min-width: 1025px) {
+  header #mobile-ul {
+    display: none;
+  }
+}
+header #desktop-nav {
+  background: linear-gradient(#84b9c4, #8cc4e9);
+  width: 100%;
+  height: 100px;
+  position: relative;
+  max-width: 1600px;
+  margin: auto;
+}
+@media screen and (max-width: 1024px) {
+  header #desktop-nav {
+    display: none;
+  }
+}
+@media screen and (min-width: 1600px) {
+  header #desktop-nav {
+    border-radius: 10px;
+  }
+}
+header #desktop-nav ul {
   margin-left: 160px;
   display: flex;
   height: 100px;
   line-height: 100px;
   text-align: center;
 }
-header nav ul span {
+header #desktop-nav ul span {
   border-left: 2px solid #000;
   display: inline-block;
   height: 50px;
   margin: 50px 0;
   transform: translateY(-50%);
 }
-header nav ul li {
+header #desktop-nav ul li {
   list-style-type: none;
   margin: auto 25px;
 }
-header nav ul li a {
+header #desktop-nav ul li a {
   text-decoration: none;
   color: #292929;
 }
-header nav #basket {
+header #desktop-nav #basket {
   display: flex;
   position: absolute;
   right: 40px;
   top: 50%;
   transform: translateY(-50%);
 }
-header nav #basket #basket-logo {
+header #desktop-nav #basket #basket-logo {
   width: 20px;
   height: 20px;
   margin-right: 15px;
 }
-header nav #basket #basket-logo img {
+header #desktop-nav #basket #basket-logo img {
   object-fit: contain;
+}
+
+footer {
+  background: #edd7a7;
 }
 
 /*# sourceMappingURL=index.css.map */
