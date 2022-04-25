@@ -132,6 +132,40 @@ header #desktop-nav #basket #basket-logo img {
 
 footer {
   background: #edd7a7;
+  display: flex;
+  justify-content: space-around;
+}
+footer #phone {
+  display: flex;
+}
+footer #phone p {
+  margin-left: 10px;
+}
+footer #cgv {
+  display: flex;
+  flex-direction: column;
+}
+footer #cgv a {
+  text-decoration: none;
+  color: #292929;
+}
+footer #phone-number {
+  width: 16px;
+  height: 16px;
+}
+footer #img-article {
+  position: relative;
+}
+footer #img-article #img {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+footer #img-article #img img {
+  width: 80px;
+  height: 80px;
 }
 
 /*# sourceMappingURL=index.css.map */
